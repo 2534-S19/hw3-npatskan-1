@@ -56,7 +56,7 @@ int main(void)
 
 
         // TODO: If a completed, debounced button press has occurred, increment count1.
-        if (debounced && checkStatus_BoosterpackS1())
+        if (debounced && !checkStatus_BoosterpackS1())
             count1++;
 
         buttonhistory = 'N'; //reset
